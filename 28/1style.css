@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    padding-top: 80px;
     box-sizing: border-box;
 }
 
@@ -35,10 +34,19 @@ body{
 .navbar a:hover{
     background-color: #1e293b;
 }
+/*1.html 3.html*/
+.section{
+    position: absolute;
+    background-image: url(image/haikei1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 80px;
+}
 
-.content{
-    margin-top: 30px;
-    margin-bottom: 100px;
+.section3{
+    padding-top: 80px;
 }
 
 .area{
@@ -68,10 +76,9 @@ body{
 .area-content{
     padding: 10px;
 }
-
+/*5html*/
 .main img{
-    width: 500px;
-    height: 200px;
+    width: 30%;
     border-radius: 50px;
 }
 
@@ -79,7 +86,10 @@ body{
     text-align: center;
     padding: 50px;
 }
-
+/*4html*/
+.section4{
+    padding-top: 80px;
+}
 .contents {
     display: flex;
     justify-content: space-between;
@@ -104,18 +114,78 @@ body{
     object-fit: cover;
 }
 
+/*home*/
+.section-home{
+    padding-top: 80px;
+}
+
 .image-section img{
     position: fixed;
     right: 0;
-    top: 90px;
     width: 50%;
+    margin-right: 10px;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
 .introduction{
+    padding-left: 80px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     text-align: left;
-    padding: 40px;
-    margin: 100px;
     box-sizing: border-box;
 }
+
+.site-purpose{
+    position: fixed;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #476086;
+    color: #f0f0f0;
+}
+/*html2*/
+.section2{
+    padding-top: 80px;
+    background-color: #476086;
+    overflow: hidden;
+}
+
+.area2{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.area-item2{
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.content2:nth-of-type(even) .area-item2{
+    flex-direction: row-reverse;
+}
+
+.area-item2 img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.content2:nth-of-type(even) .area-item2 img {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.area-content{
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+}
+
